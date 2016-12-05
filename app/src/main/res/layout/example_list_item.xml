@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:text="TextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/exampleTextView"
+    android:textSize="@dimen/mTexySize"
+    android:textColor="@color/clListView"
+    android:padding="@dimen/mViewPadding"
+    android:textAlignment="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,108 @@
+<!-- Master layout. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.andreyshem.weatherandmap.DetailForecastFragment">
+
+        <!-- Header: Day, Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:color="@color/grey_blue"
+            android:orientation="vertical"
+            android:background="@color/wallet_holo_blue_light"
+            tools:background="@color/light_blue">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageIcon"
+                            android:padding="@dimen/mImageViewPadding"
+                            android:layout_gravity="top|left" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/city"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:padding="@dimen/mImageViewPadding"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/mTexySize"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/mImageViewPadding"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textMaxTemp"
+                                    android:id="@+id/temp_max" />
+
+                                <TextView
+                                    android:id="@+id/temp_min"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:padding="@dimen/mImageViewPadding"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textDetailForm" />
+
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/mImageViewPadding"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textDetailForm"
+                            android:id="@+id/humidity" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/mImageViewPadding"
+                            android:id="@+id/pressure"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textMaxTemp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/mImageViewPadding"
+                            android:id="@+id/wind_speed"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textDetailForm" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/mImageViewPadding"
+                    android:id="@+id/mDate"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:fontFamily="casual"
+                    android:textSize="@dimen/mTexySize" />
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

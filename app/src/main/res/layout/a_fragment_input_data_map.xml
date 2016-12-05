@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/startForm"
+    tools:context="com.example.andreyshem.weatherandmap.a_InputDataMapFragment"
+    android:padding="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:padding="@dimen/mLayoutPadding">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplTxtVwStartPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/atoComplTxt"
+
+            android:layout_gravity="top"
+            android:completionThreshold="3"
+            android:padding="@dimen/mViewPadding"
+            android:textSize="@dimen/mTexySize"
+            android:textColor="@color/clAutocompTxtView"
+            android:autoText="false"
+            android:clickable="false">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplTxtVwEndPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/atoComplTxt"
+
+            android:layout_gravity="top"
+            android:completionThreshold="3"
+            android:padding="@dimen/mViewPadding"
+            android:textSize="@dimen/mTexySize"
+            android:textColor="@color/clAutocompTxtView"
+            android:autoText="false"
+            android:clickable="false">
+            <requestFocus />
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/mLayoutPadding">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnTxt"
+            android:id="@+id/btnFindPath"
+            android:textColor="@color/light_blue"
+            android:onClick="onClickBtnFindPath"
+            android:layout_gravity="top|center_horizontal"
+            android:padding="@dimen/mViewPadding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mTexySize"
+            android:text="@string/txtFrom"
+            android:id="@+id/textViewFROM"
+            android:layout_gravity="top|left|center"
+            android:clickable="true"
+            android:textColor="@color/light_blue"
+            android:onClick="onClickTxtViewGetLocalWeather"
+            android:paddingTop="@dimen/mTextViewPadding"
+            android:paddingBottom="@dimen/mTextViewPadding"
+            android:paddingLeft="@dimen/mViewPadding"
+            android:paddingRight="@dimen/mViewPadding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mTexySize"
+            android:text="@string/txtFrom"
+            android:id="@+id/textViewTO"
+            android:onClick="onClickTxtViewGetLocalWeather"
+            android:layout_gravity="top|left|center"
+            android:textColor="@color/light_blue"
+            android:paddingTop="@dimen/mTextViewPadding"
+            android:paddingBottom="@dimen/mTextViewPadding"
+            android:paddingLeft="@dimen/mViewPadding"
+            android:paddingRight="@dimen/mViewPadding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/mTexySize"
+            android:text=""
+            android:id="@+id/showCityName"
+            android:onClick="onClickTxtViewGetLocalWeather"
+            android:textColor="@color/clHead"
+            android:layout_gravity="top|center"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

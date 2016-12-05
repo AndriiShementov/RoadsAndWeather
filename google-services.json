@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "899860486437",
+    "project_id": "newkeymap"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899860486437:android:6e1b420092c8e3c6",
+        "android_client_info": {
+          "package_name": "com.example.andreyshem.weatherandmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899860486437-pih71aierm8qbvrsb9ej6ktassa0527l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andreyshem.weatherandmap",
+            "certificate_hash": "5F7AECBBDA997D75A5DE289CFDF970EBC1B6D31B"
+          }
+        },
+        {
+          "client_id": "899860486437-8994pj85itfd1b67sgnk4vcasgmp8gqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKGuUVHUaDWToBZd-j4CfgdvKsKn8UD7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

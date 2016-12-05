@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_700">#646464</color>
+    <color name="black">#000000</color>
+    <color name="startForm">#9fedd3b3</color>
+    <color name="clListLayout">#9fedd3b3</color>
+
+    <color name="light_blue">#0d5c87</color>
+    <color name="soft_yellow">#f4d058</color>
+    <color name="blue">#0d5c87</color>
+    <color name="grey_blue">#0d5c87</color>
+    <color name="clAutocompTxtView">#0d5c87</color>
+    <color name="clAutoItemView">#0d5c87</color>
+    <color name="clHead">#0d5c87</color>
+    <color name="clListView">#0d5c87</color>
+
+
+</resources>
