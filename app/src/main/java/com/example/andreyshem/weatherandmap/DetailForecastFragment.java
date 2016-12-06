@@ -63,12 +63,12 @@ public class DetailForecastFragment extends Fragment{
         mPressureView = (TextView) rootView.findViewById(R.id.pressure);
         mCity = (TextView) rootView.findViewById(R.id.city);
 
-        Intent intent = getActivity().getIntent();
-        if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-            mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
-            ((TextView) rootView.findViewById(R.id.temp_min))
-            .setText(mForecastStr);
-        }
+//        Intent intent = getActivity().getIntent();
+//        if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
+//            mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
+//            ((TextView) rootView.findViewById(R.id.temp_min))
+//            .setText(mForecastStr);
+//        }
 
 
         mCity.setText(cityName);
@@ -108,7 +108,12 @@ public class DetailForecastFragment extends Fragment{
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, mForecastStr);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.minValueOfTemperature) + " "
+                + temperature_minTO + "; " + getString(R.string.maxValueOfTemperature)+ " " +
+                temperature_maxTO + "; " + getString(R.string.pressureText)+ " " +
+                pressureTO + "; " + getString(R.string.humidityText)+ " " +
+                humidityTO+ "; " + getString(R.string.windSpeedText)+ " " +
+                windSpeedTO+ "; " + getString(R.string.windDirectionText)+ " " + windDirectionTO);
         return shareIntent;
     }
 
