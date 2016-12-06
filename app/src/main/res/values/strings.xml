@@ -67,7 +67,8 @@
     <string name="action_refresh" translatable="false">Refresh</string>
     <string name="title_activity_detail">Details</string>
     <!-- Format Strings -->
-    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 C</string>
+    <string name="format_temperatureF"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 F</string>
 
     <string name="format_pressureM">Pressure: <xliff:g id="pressure">%1.0f</xliff:g> hPa</string>
     <string name="format_pressureI">Pressure: <xliff:g id="pressure">%1.0f</xliff:g> mmHg</string>

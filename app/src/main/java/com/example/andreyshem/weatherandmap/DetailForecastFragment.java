@@ -63,14 +63,6 @@ public class DetailForecastFragment extends Fragment{
         mPressureView = (TextView) rootView.findViewById(R.id.pressure);
         mCity = (TextView) rootView.findViewById(R.id.city);
 
-//        Intent intent = getActivity().getIntent();
-//        if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-//            mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
-//            ((TextView) rootView.findViewById(R.id.temp_min))
-//            .setText(mForecastStr);
-//        }
-
-
         mCity.setText(cityName);
 
         int weatherId = Integer.valueOf(weather_idTO);
@@ -83,7 +75,6 @@ public class DetailForecastFragment extends Fragment{
         mLowTempView.setText(getString(R.string.minValueOfTemperature) + " " + Utility.formatTemperature(getActivity(),temperature_minTO));
 
         mHumidityView.setText(getString(R.string.humidityText)+ humidityTO + " %");
-//        mSelectDate.setText(getString(R.string.pressureText) + pressureTO + " kPa");
 
         mPressureView.setText(Utility.getFormatPressure(getActivity(), pressureTO));
 

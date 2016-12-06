@@ -32,13 +32,16 @@ public class Utility {
     }
 
     public static String formatTemperature(Context context, String temperature) {
+        int tempFormat;
         Double temperature1 = Double.valueOf(temperature);
 
-//        String suffix = "\u00B0";
         if (!isMetric(context)) {
             temperature1 = (temperature1 * 1.8) + 32;
+            tempFormat = R.string.format_temperatureF;
+        }else{
+            tempFormat = R.string.format_temperature;
         }
-        return String.format(context.getString(R.string.format_temperature), temperature1);
+        return String.format(context.getString(tempFormat), temperature1);
     }
 
     public static String getFormatPressure(Context context, String pressure) {

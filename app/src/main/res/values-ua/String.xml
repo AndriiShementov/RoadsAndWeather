@@ -39,7 +39,10 @@
 
     <string name="title_activity_detail">Деталі</string>
     <!-- Format Strings -->
-    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 C</string>
+    <string name="format_temperatureF"><xliff:g id="temp">%1.0f</xliff:g>\u00B0 F</string>
+
+
 
     <string name="format_pressureM">Тиск: <xliff:g id="pressure">%1.0f</xliff:g> кПа</string>
     <string name="format_pressureI">Тиск: <xliff:g id="pressure">%1.0f</xliff:g> мм.рт.ст.</string>

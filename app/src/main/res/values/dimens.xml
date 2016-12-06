@@ -9,6 +9,6 @@
     <dimen name="mLayoutPadding">4dp</dimen>
     <dimen name="mTexySize">16sp</dimen>
     <dimen name="text_margin">16dp</dimen>
-    <dimen name="textMaxTemp">40dp</dimen>
+    <dimen name="textMaxTemp">30dp</dimen>
     <dimen name="textDetailForm">20dp</dimen>
 </resources>
